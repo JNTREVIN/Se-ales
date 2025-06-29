@@ -1,0 +1,222 @@
+body{
+    background-color: #F2F2F2;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilos para la Navbar */
+.navbar {
+    background-color: #025928; /* Verde oscuro */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Estilo para los enlaces de la barra de navegación */
+.nav-item a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: rgb(255, 255, 255, 0.5); /* Color de texto para los enlaces no activos */
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Estilo para la página activa */
+.nav-item.active a {
+    color: #28a745; /* Cambia el color de texto para el enlace activo */
+    font-weight: bold; /* Añade negrita al enlace activo para resaltarlo */
+}
+
+.nav-link {
+    color: #fff !important; /* Blanco para contraste */
+    transition: color 0.3s;
+    margin-right: 20px;
+}
+
+.nav-link:hover {
+    color: #d4d4d4 !important; /* Gris claro al pasar el cursor */
+    border-bottom: 2px solid #d4d4d4;
+}
+
+.card{
+    background-image: url('../Imagen/reciclaje_ropa.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Estilos de carta inicio de sesion */
+.card-body {
+    background-color: #027333; /* Fondo verde */
+    color: white; /* Texto blanco */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 25px 25px 25px 25px; /* Bordes curvos solo en la parte inferior */
+    padding: 1.5rem; /* Espaciado interno */
+    width: 24rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-between;
+}
+
+/* Estilos para el Contenido Principal */
+.container {
+    max-width: 900px; /* Aumenta el ancho máximo del contenedor */
+    padding: 2rem; /* Aumenta el padding interno */
+    margin-top: 2rem; /* Ajusta el margen superior */
+    margin-bottom: 2rem; /* Ajusta el margen inferior */
+}
+/* Estilos para el Footer */
+.footer {
+    background-color: #FFFFFF; 
+    color: #025928;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+@media (max-width: 760px) {
+    #staticmap{
+        max-width: 100%;
+        height: auto;  
+    }
+    .hero-text {
+        margin-top: 30px; 
+        padding: .5rem;
+        /* Asegura que el cuadro ocupe el ancho completo */
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 0.9rem; 
+    }
+
+    .hero-text .btn {
+        font-size: 0.9rem; 
+        padding: 0.4rem 0.8rem; 
+    }
+
+    .image-container {
+        text-align: center;
+    }
+
+    .infografia {
+        max-width: 100%;
+        height: auto;
+    }
+    #formulario {
+        margin-left: 40px;
+    max-width: 60%;
+    padding: 40px;
+   
+
+    }
+    }
+
+
+/*Footer*/
+.social_link{
+    font-size: 60px;
+    color: #025928;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.social_link:hover{
+    text-decoration: none;
+    color: rgba(2, 89, 40, 0.5);;
+}
+
+.social_icon:hover{
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+.imf {
+    height: 150px;
+    margin-bottom: 50px;
+}
+
+.tam {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+/*Onda*/
+.wave-container {
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+.nuevoUsuario{
+    background-color: #D4D4D4;
+    color:#333;
+}
+
+.banner{
+    background-image: url('../Imagen/Banner.jpeg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #333; 
+    height: 150px;
+    text-align: center;
+    align-items: center;
+    font-weight: bolder;
+}
+
+.formularioNuevoUsuario{
+    padding-top: 4rem;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedores{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    
+}
+
+.titulo{
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+#botonInicio{
+    background-color: #027333;
+    border-color: #ffffff;
+}
+#botonInicio:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+}
+
+h1 {
+    font-size: 3rem; /* Aumenta el tamaño de la fuente del encabezado */
+}
+
+p {
+    font-size: 1.25rem; /* Aumenta el tamaño de la fuente del párrafo */
+}

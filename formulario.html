@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="icon" href="Imagen/1.png" type="image/png">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="src/diseñosForms.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html"><img src="Imagen/1.png" style="height: 50px;" alt="Logo1"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sesion.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#seccionFooter">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <br>
+        <h1>Registro</h1>
+    </div>
+
+    <div class="formularioNuevoUsuario">
+        <form action="./php/agregar.php" method="POST" onsubmit="return validarFormulario()">
+            <div class="card-body nuevoUsuario">
+
+                <h4>Ingresa tus datos</h4>
+                <br>
+                <div class="form-row">
+                    <div class="col">
+                        <input class="form-control" type="text" placeholder="Usuario" name="user" id="user"><br>
+                    </div>
+                    <div class="col">
+                        <input class="form-control" type="password" placeholder="Contraseña" name="pass" id="pass"><br>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Nombre" name="name" id="name"><br>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Apellido" name="apellido" id="apellido"><br>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Direccion" name="direccion" id="direccion"><br>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="email" name="email" placeholder="ej: usuario@ropatech.com" id="email"><br>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="tel" placeholder="Telefono" name="telefono" id="telefono"><br>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary" id="botonInicio" type="submit">Registrarte</button>
+                    <button type="button" class="btn btn-danger" 
+                        onclick="redireccion()">Cancelar</button>
+                </div>
+            </div>
+
+
+        </form>
+
+    </div>
+    <div>
+
+    </div>
+
+    <!-- Footer -->
+    <section id="seccionFooter">
+        <footer class="footer">
+            <div class="container">
+                <a href="https://www.instagram.com/" target="_blank" class="social_link" id="f1">
+                    <i class="bx bxl-instagram social_icon"></i>
+                </a>
+                <a href="https://es-la.facebook.com/" target="_blank" class="social_link">
+                    <i class="bx bxl-facebook-circle social_icon"></i>
+                </a>
+                <a href="https://twitter.com/?lang=es" target="_blank" class="social_link">
+                    <i class="bx bxl-twitter social_icon"></i>
+                </a>
+                <a href="https://www.tiktok.com/es/" target="_blank" class="social_link">
+                    <i class="bx bxl-tiktok social_icon"></i>
+                </a>
+                <br>
+                <p class="mb-0">RopaTech - Transformando moda en sostenibilidad. © 2024 Todos los derechos reservados.
+                    <b>
+                        <h6><a class="social_link tam" href="#">Aviso de privacidad</a> | <a class="social_link tam"
+                                href="#">Términos de Servicio</a> | <a class="social_link tam" href="#">Contáctanos</a>
+                        </h6>
+                    </b>
+                </p>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+        function validarFormulario() {
+            var user = document.getElementById("user").value;
+            var pass = document.getElementById("pass").value;
+            var name = document.getElementById("name").value;
+            var apellido = document.getElementById("apellido").value;
+            var direccion = document.getElementById("direccion").value;
+            var email = document.getElementById("email").value;
+            var telefono = document.getElementById("telefono").value;
+            if (user === "" || pass === "" || name === "" || apellido === "" || direccion === "" || email === "" || telefono === "") {
+                alert("Todos los campos deben estar llenos");
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <script src="./js/validar.js"></script>
+</body>
+</html>

@@ -1,0 +1,410 @@
+body{
+    background-color: #F2F2F2;
+}
+
+/* Estilos para la Navbar */
+.navbar {
+    background-color: #025928; /* Verde oscuro */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Estilo para los enlaces de la barra de navegación */
+.nav-item a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: rgb(255, 255, 255, 0.5); /* Color de texto para los enlaces no activos */
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Estilo para la página activa */
+.nav-item.active a {
+    color: #28a745; /* Cambia el color de texto para el enlace activo */
+    font-weight: bold; /* Añade negrita al enlace activo para resaltarlo */
+}
+
+.nav-link {
+    color: #fff !important; /* Blanco para contraste */
+    transition: color 0.3s;
+    margin-right: 20px;
+}
+
+.nav-link:hover {
+    color: #d4d4d4 !important; /* Gris claro al pasar el cursor */
+    border-bottom: 2px solid #d4d4d4;
+}
+
+/* Estilos para la imagen de fondo */
+.hero-image {
+    background-image: url("../Imagen/reciclaje_ropa.jpg"); 
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo semitransparente */
+    backdrop-filter: blur(5px); /* Difuminado */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    text-align: left;
+    margin-top: 80px; /* Margen superior para separar del navbar */
+}
+
+.hero-text h1 {
+    font-size: 5rem;
+    font-family: 'Arial', sans-serif; /* Cambiar el tipo de letra */
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+    font-family: 'Arial', sans-serif; /* Cambiar el tipo de letra */
+}
+
+.hero-text .btn {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: rgba(161, 160, 160, 0.3); /* Fondo blanco semitransparente */
+    border: 2px solid white; /* Contorno blanco */
+    border-radius: 25px; /* Bordes curvos */
+    color: white; /* Texto en blanco */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para el fondo y el texto */
+}
+
+.hero-text .btn:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo más opaco al pasar el cursor */
+    color: #333; /* Cambia el color del texto al pasar el cursor */
+}
+
+
+/* Estilos para el Contenido Principal */
+.container {
+    max-width: 900px; /* Aumenta el ancho máximo del contenedor */
+    padding: 2rem; /* Aumenta el padding interno */
+    margin-top: 2rem; /* Ajusta el margen superior */
+    margin-bottom: 2rem; /* Ajusta el margen inferior */
+}
+
+.custom-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 25px; /* Bordes curvos */
+    overflow: hidden; /* Para que las esquinas de la imagen también sean curvadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-bottom: 2rem; /* Mayor espaciado entre los contenedores */
+    height: 100%; /* Asegura que las tarjetas se estiren para ocupar el espacio */
+    max-width: 100%; /* Asegura que el contenedor ocupe el ancho máximo permitido */
+}
+
+.custom-card .card-img-top {
+    flex-shrink: 0;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
+    height: 250px; /* Incrementa la altura de la imagen */
+}
+
+.custom-card .card-body {
+    background-color: #027333; /* Fondo verde */
+    color: white; /* Texto blanco */
+    border-radius: 0 0 25px 25px; /* Bordes curvos solo en la parte inferior */
+    padding: 1.5rem; /* Espaciado interno */
+    flex-grow: 1; /* Asegura que el cuerpo crezca para llenar el espacio */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.custom-card .card-title {
+    font-size: 1.5rem; /* Tamaño de fuente del título */
+    font-weight: bold; /* Negrita para el título */
+    margin-bottom: 0.5rem; /* Espaciado inferior del título */
+}
+
+.custom-card .card-text {
+    font-size: 1rem; /* Tamaño de fuente del texto */
+    margin-bottom: 1rem; /* Espaciado inferior del texto */
+}
+
+.custom-card .btn {
+    background-color: #027333; /* Fondo blanco semitransparente */
+    border: 2px solid white; /* Contorno blanco */
+    border-radius: 25px; /* Bordes curvos */
+    color: white; /* Texto blanco */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para el fondo y el texto */
+    font-size: 1rem; /* Tamaño de fuente del botón */
+    padding: 0.5rem 1rem; /* Espaciado interno del botón */
+    align-self: flex-end; /* Alinea el botón al final del contenedor */
+}
+
+.custom-card .btn:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo más opaco al pasar el cursor */
+    color: #333; /* Cambia el color del texto al pasar el cursor */
+}
+
+
+h1 {
+    font-size: 3rem; /* Aumenta el tamaño de la fuente del encabezado */
+}
+
+p {
+    font-size: 1.25rem; /* Aumenta el tamaño de la fuente del párrafo */
+}
+
+/* Estilos para el Footer */
+.footer {
+    background-color: #FFFFFF; 
+    color: #025928;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+@media (max-width: 760px) {
+    #staticmap{
+        max-width: 100%;
+        height: auto;  
+    }
+    .hero-text {
+        margin-top: 30px; 
+        padding: .5rem;
+        /* Asegura que el cuadro ocupe el ancho completo */
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 0.9rem; 
+    }
+
+    .hero-text .btn {
+        font-size: 0.9rem; 
+        padding: 0.4rem 0.8rem; 
+    }
+
+    .image-container {
+        text-align: center;
+    }
+
+    .infografia {
+        max-width: 100%;
+        height: auto;
+    }
+    #formulario {
+        margin-left: 40px;
+    max-width: 60%;
+    padding: 40px;
+   
+
+    }
+    }
+
+
+/*Footer*/
+.social_link{
+    font-size: 60px;
+    color: #025928;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.social_link:hover{
+    text-decoration: none;
+    color: rgba(2, 89, 40, 0.5);;
+}
+
+.social_icon:hover{
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+.imf {
+    height: 150px;
+    margin-bottom: 50px;
+}
+
+.tam {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+/*Onda*/
+.wave-container {
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+/* Contenido Principal */
+.container-fluid {
+    max-width: 90%; /* Aumenta el ancho máximo del contenedor */
+    padding: 2rem; /* Aumenta el padding interno */
+}
+
+/*Formulario*/
+#formulario {
+    margin-left: 20px;
+    max-width: 35%;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#formulario h2 {
+    margin-top: 100px;
+    color: #333;
+}
+
+input[type="text"] {
+    margin-left: 5%;
+    width: calc(65% - 12px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    background-color: #e0e0e0;
+}
+
+.anc{
+    width: 100%;
+}
+
+.mapita {
+    width: 100%;
+}
+
+.mapa {
+    margin-left: auto;
+}
+
+/*Css info*/
+/* Estilos para la sección de Sobre Nosotros */
+#sobrenosotros {
+    padding: 2rem;
+    background-color: #f2f2f2;
+    text-align:justify;
+}
+
+#sobrenosotros .text-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+#sobrenosotros h1 {
+    text-align:center;
+    font-size: 4.5rem;
+    color: #025928;
+    margin-bottom: 0.5rem;
+}
+
+#sobrenosotros h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+#sobrenosotros p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+#impacto-ambiental li {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+#impacto-ambiental ul {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#reciclaje-ropa .image-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#reciclaje-ropa .infografia {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+/* Mejora del diseño del formulario y el mapa */
+/* Mejora del diseño del formulario y el mapa */
+.container-fluid {
+    max-width: 90%;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#formulario {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 5px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+
+.mapa {
+    position: relative;
+}
+
+#staticMap {
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#map {
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+

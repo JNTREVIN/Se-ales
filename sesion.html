@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <title>Iniciar Sesión</title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Imagen/1.png" type="image/png">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="src/diseñosForms.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html"><img src="Imagen/1.png" style="height: 50px;" alt="Logo1"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sesion.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#seccionFooter">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="card">
+        
+        <div class="card-body">
+            <form action="./php/sesion.php" id="Busquedad" method="post">
+                <h4>Inicio de Sesión</h4><br>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Usuario" id="user" name="user" required>
+                </div>
+                <div class ="form-group">
+                    <input type="password" class="form-control" placeholder="Contraseña" id="pass" name="pass" required>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <button type="submit" class="btn btn-primary" id="botonInicio" value = "Enviar">Inicia Sesión</button>
+                    </div>
+                    <br>
+                    <br>
+                    <h4>¿Aún no tienes un perfil?</h4>
+                    <div>                        
+                        <button type="button" class="btn btn-primary" id="botonInicio" onclick="red()">Registate</button>
+                        
+                    </div>
+                </div>
+                
+            </form>
+            <div id="LLenarC" style="display: none;">
+                <h2>Error: Usuario o contraseña incorrectos.</h2>
+            </div>
+        </div>
+        
+    </div>
+    
+
+
+
+    <!-- Footer -->
+    <section id="seccionFooter">
+        <footer class="footer">
+            <div class="container">
+                <a href="https://www.instagram.com/" target="_blank" class="social_link" id="f1">
+                    <i class="bx bxl-instagram social_icon"></i>
+                </a>
+                <a href="https://es-la.facebook.com/" target="_blank" class="social_link">
+                    <i class="bx bxl-facebook-circle social_icon"></i>
+                </a>
+                <a href="https://twitter.com/?lang=es" target="_blank" class="social_link">
+                    <i class="bx bxl-twitter social_icon"></i>
+                </a>
+                <a href="https://www.tiktok.com/es/" target="_blank" class="social_link">
+                    <i class="bx bxl-tiktok social_icon"></i>
+                </a>
+                <br>
+                <p class="mb-0">RopaTech - Transformando moda en sostenibilidad. © 2024 Todos los derechos reservados.
+                    <b>
+                        <h6><a class="social_link tam" href="#">Aviso de privacidad</a> | <a class="social_link tam"
+                                href="#">Términos de Servicio</a> | <a class="social_link tam" href="#">Contáctanos</a>
+                        </h6>
+                    </b>
+                </p>
+            </div>
+        </footer>
+    </section>
+    <script src="./js/validar.js"></script>
+</body>
+
+</html>
+
