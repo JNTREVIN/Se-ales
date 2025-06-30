@@ -76,10 +76,10 @@ $row = mysqli_fetch_array($q);
                 </div>
                 <div class="form-row">
                     <div class="col">
-                        <input class="form-control" type="text" placeholder="Material" name="material" id="material"><br>
+                        <input class="form-control" type="text" placeholder="Tipos de prendas" name="material" id="material"><br>
                     </div>
                     <div class="col">
-                        <input class="form-control" type="number" placeholder="Kilogramos" name="kilos" id="kilos"><br>
+                        <input class="form-control" type="number" placeholder="No. de Prendas" name="kilos" id="kilos"><br>
                     </div>
                 </div>
                 <div class="form-group">

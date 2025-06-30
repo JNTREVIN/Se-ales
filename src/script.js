@@ -11,8 +11,8 @@ const collectionCenters = [
 
 function loadMap(event) {
     event.preventDefault();
-    const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyC1lVnKTX_5hiUeHYcA9XLUCJ1xMTxEdXM&callback=initMap`;
+    const script = document.createElement('script'); 
+    script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDOezICIuJ34bFM7PZa_JflFT6l4RJzUi4&callback=initMap&libraries=geometry`;
     script.async = true;
     script.defer = true;
     document.head.appendChild(script);
@@ -60,7 +60,7 @@ function geocodeAddress(address) {
 function findClosestCollectionCenter(location) {
     let closestCenter = null;
     let shortestDistance = Infinity;
-    
+
     collectionCenters.forEach(center => {
         const distance = google.maps.geometry.spherical.computeDistanceBetween(
             new google.maps.LatLng(location.lat(), location.lng()),
@@ -93,6 +93,3 @@ function calculateAndDisplayRoute(start, end) {
         }
     );
 }
-
-
-
